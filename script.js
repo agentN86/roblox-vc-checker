@@ -1,4 +1,4 @@
-fetch("./settings2.json")
+fetch("https://voice.roblox.com/v1/settings")
     .then((res) => res.json())
     .then((data) => {
 
