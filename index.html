@@ -10,8 +10,9 @@
 <body>
     <div style="display: flex; flex-direction: column; align-items: center; height: 100%;">
         <h1 style="text-align: center;">Am I VC Banned?</h1>
-
         <div style="width: 100%; max-width: 600px; margin-bottom: 1em;">
+            <p>First, you need to get the voice settings JSON file. You can <a href="https://voice.roblox.com/v1/settings" download>download it here</a>, then upload it using this:</p>
+            <input type="file" accept=".json" id="jsonFile"><button onclick="dostuff()">Submit</button>
             <p>You are <span id="result" style="color: green;"></span> VC banned<span id="reason"></span>.</p>
             <p style="display:none;" id="until">You will be banned until <span id="timestamp"></span></p>
             <i><p id="oneliner"></p></i>
